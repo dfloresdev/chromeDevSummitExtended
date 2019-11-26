@@ -5,9 +5,9 @@ body {
 }
 
 .realColor {
-    background-color: #1E2224;
+    background-color: #1E2224!important;
     /*color: #171A1C;*/
-    color: #ABB5BA; 
+    color: #ABB5BA!important; 
 }
 
 .mainTitle {
@@ -16,11 +16,23 @@ body {
     text-align: center;
 }
 
-.subTitle {
-    color: #ABB5BA; 
-    font-weight: 700;
-    font-size: 36px;
-    margin-bottom: 0px;
+@media only screen and (min-width : 320px) { 
+    .subTitle {
+        color: #ABB5BA; 
+        font-weight: 700;
+        font-size: 30px;
+        margin-bottom: 0px;
+    }
+}
+
+@media only screen and (min-width : 1200px) {
+    .subTitle {
+        color: #ABB5BA; 
+        font-weight: 700;
+        font-size: 36px;
+        margin-bottom: 0px;
+    }
+
 }
 
 .moreInfo {
@@ -58,10 +70,24 @@ body {
 }
 
 .card-content {
-    height: 400px!important;
+    height: 350px!important;
 }
 
 .cardShadow {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: #171A1C;
+}
+
+.modal-title {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+strong {
+    font-weight: 700!important;
+}
+
+.conf-title {
+    font-size: 17px;
+    text-align: center;
 }
